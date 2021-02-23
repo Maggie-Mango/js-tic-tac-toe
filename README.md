@@ -1,6 +1,6 @@
-# Title
+# Tic-Tac-Toe
 
-### Snappy one-linder
+### JS Tutorial Tic Tac Toe Project
 
 #### By Maggie Saldivia **{Maggie-Mango}**
 
@@ -14,22 +14,18 @@
 
 ## Description
 
-text
+Pure JS Tic-Tac-Toe project. The Xs and Os are created with CSS. Followed tutorial from [Web Dev Simplified](https://youtu.be/Y-GkMjUZsmM)
 
 ## Setup/Installation Requirements
 
 * Clone this repository to your desktop.
 * Navigate to the top level of the directory.
-* Open {folder-name}/index.html in your browser.
+* Open tictactoe/index.html in your browser.
 
 ## Link
 
-https://maggie-mango.github.io/{repo-name}
+https://maggie-mango.github.io/js-tic-tac-toe
 
-## Known Bugs
-
-* 
-* 
 
 ## License
 
