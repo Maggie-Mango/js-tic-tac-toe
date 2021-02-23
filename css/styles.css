@@ -8,7 +8,7 @@ body {
 
 :root {
   --cell-size: 100px;
-  --mark-size: cal(var(--cell-size)*.9);
+  --mark-size: calc(var(--cell-size)*.9);
 }
 
 .board {
@@ -27,6 +27,10 @@ body {
   width: var(--cell-size);
   height: var(--cell-size);
   border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .cell:first-child,
@@ -39,12 +43,29 @@ body {
   border-left: none;
 }
 
-.cell:nth-child(3n +1) {
-  border-left: right;
+.cell:nth-child(3n +3) {
+  border-right: none;
 }
 
 .cell:last-child,
 .cell:nth-child(8),
 .cell:nth-child(7) {
-  border-top: none;
+  border-bottom: none;
+}
+
+.cell.x::before,
+.cell.x::after {
+  position: absolute;
+  content: '';
+  width: calc(var(--mark-size) * .15);
+  height: var(--mark-size);
+  background-color: black;
+}
+
+.cell.x::before {
+  transform: rotate(45deg);
+}
+
+.cell.x::after {
+  transform: rotate(-45deg);
 }
